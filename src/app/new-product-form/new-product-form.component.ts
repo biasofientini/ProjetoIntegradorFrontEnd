@@ -23,8 +23,6 @@ export class NewProductFormComponent implements OnInit {
 
   ngOnInit() {
     this.product.category = 1 //default
-
-
   }
 
   productCategory(event: any) {
@@ -64,6 +62,7 @@ export class NewProductFormComponent implements OnInit {
       this.product = resp
       this.alert.setAlert('🎉 Produto cadastrado', `${this.product.name} cadastrado com sucesso.`, 'agora', 3000)
       this.product = new Product()
+      this.product.category = 1
     })
      
   }
