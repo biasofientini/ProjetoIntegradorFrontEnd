@@ -22,7 +22,6 @@ export class NewProductFormComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.product.category = 1 //default
   }
 
   productCategory(event: any) {
